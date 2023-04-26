@@ -33,7 +33,7 @@ resource "oci_devops_deploy_artifact" "test_deploy_artifact_default" {
   project_id           = oci_devops_project.test_project.id
 
   #Optional
-  display_name = "${oci_artifacts_container_repository.test_container_repository.display_name}"
+  display_name = "oci_artifacts_container_repository.test_container_repository.display_name"
 }
 
 resource "oci_devops_deploy_artifact" "test_deploy_artifact_custom" {
@@ -54,5 +54,5 @@ resource "oci_devops_deploy_artifact" "test_deploy_artifact_custom" {
   project_id           = oci_devops_project.test_project.id
 
   #Optional
-  display_name = "${oci_artifacts_container_repository.test_container_repository2.display_name}"
+  display_name = "oci_artifacts_container_repository.test_container_repository2.display_name"
 }
